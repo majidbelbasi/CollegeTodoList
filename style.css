@@ -1,0 +1,102 @@
+body {
+  font-family: "Tahoma", sans-serif;
+  background: linear-gradient(to left, #f7f7f7, #e6f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #336699;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #336699;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #285280;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f0f0f0;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+li button {
+  background: #ff6666;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+li button:hover {
+  background-color: #cc0000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.author {
+  padding: 2px;
+  border-radius: 5%;
+  background-color: rgb(251, 248, 248);
+  border-color: rgb(32, 31, 31);
+  border-style: solid;
+}
